@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa982b6d-b653-49d0-98b4-b0e2b9825fd7" name="Default Changelist" comment="" />
+    <list default="true" id="aa982b6d-b653-49d0-98b4-b0e2b9825fd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-src/core/instance/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-src/core/instance/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-src/core/instance/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-src/core/instance/init.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-src/core/instance/init.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-src/core/instance/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-src/core/instance/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-src/core/instance/render.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-src/core/instance/render.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jOaKgZemn7IG24vW2L4AxCBeks" />
   <component name="ProjectViewState">
@@ -15,6 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -66,6 +105,8 @@
       <workItem from="1603679420162" duration="8011000" />
       <workItem from="1603849423227" duration="12256000" />
       <workItem from="1603940776507" duration="3724000" />
+      <workItem from="1603949653543" duration="5130000" />
+      <workItem from="1603954909762" duration="4297000" />
     </task>
     <servers />
   </component>
@@ -74,16 +115,39 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/test/01-principle.js" />
-        <option value="$PROJECT_DIR$/test/deep.js" />
-        <option value="$PROJECT_DIR$/vue-src/core/index.js" />
-        <option value="$PROJECT_DIR$/vue-src/core/instance/index.js" />
-        <option value="$PROJECT_DIR$/vue-src/core/instance/init.js" />
-        <option value="$PROJECT_DIR$/vue-src/core/config.js" />
-        <option value="$PROJECT_DIR$/vue-src/core/shared/util.js" />
-        <option value="$PROJECT_DIR$/vue-src/core/shared/constants.js" />
         <option value="$PROJECT_DIR$/vue-src/core/instance/proxy.js" />
+        <option value="$PROJECT_DIR$/test/deep.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/instance/index.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/instance/render.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/index.js" />
         <option value="$PROJECT_DIR$/vue-src/core/util/index.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/config.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/instance/init.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/instance/events.js" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
@@ -95,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="500" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603863980046" />
-    <state x="1162" y="298" key="FileChooserDialogImpl" timestamp="1603867118008">
+    <state x="1162" y="298" key="FileChooserDialogImpl" timestamp="1603954906997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1162" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603867118008" />
+    <state x="1162" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603954906997" />
     <state width="1061" height="2" key="GridCell.Tab.0.bottom" timestamp="1603867119117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,9 +183,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="213" width="998" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603679516773" />
-    <state x="1008" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603851428143">
+    <state x="1170" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603959220722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1008" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603851428143" />
+    <state x="1170" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603959220722" />
+    <state x="1008" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603953223342">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1008" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603953223342" />
   </component>
 </project>

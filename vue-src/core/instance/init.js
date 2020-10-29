@@ -38,7 +38,7 @@ function initMixin(Vue) {
             vm.$options = index_1.mergeOptions(resolveConstructorOptions(vm.constructor), options || {}, vm);
         }
         // unknow
-        if (0) {
+        if (index_1.notProduction()) {
             proxy_1.initProxy(vm);
         }
         else {

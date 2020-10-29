@@ -10,7 +10,7 @@ import { initEvents } from './events'
 import { mark, measure } from '../util/perf'
 import { initLifecycle, callHook } from './lifecycle'
 import { initProvide, initInjections } from './inject'
-import { extend, mergeOptions, formatComponentName } from '../util/index'
+import {extend, mergeOptions, formatComponentName, notProduction} from '../util/index'
 
 // 每一个组件的唯一 id
 let uid = 0
@@ -26,7 +26,6 @@ export function initMixin(Vue: Function) {
             // todo 调用 mark 函数
             mark(startTag)
         }
-
         // 防止 vm 实列自身被观察的标志位
         vm._isVue = true
         // 合并配置项
@@ -40,7 +39,7 @@ export function initMixin(Vue: Function) {
             )
         }
         // unknow
-        if(0) {
+        if(notProduction()) {
             initProxy(vm)
         } else {
             vm._renderProxy = vm
