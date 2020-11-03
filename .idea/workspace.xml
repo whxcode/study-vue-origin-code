@@ -29,12 +29,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa982b6d-b653-49d0-98b4-b0e2b9825fd7" name="Default Changelist" comment="1、学习 events 绑定规则">
-      <change afterPath="$PROJECT_DIR$/vue-src/core/util/debug.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-src/core/util/env.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-src/core/util/error.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-src/core/util/perf.ts" afterDir="false" />
+    <list default="true" id="aa982b6d-b653-49d0-98b4-b0e2b9825fd7" name="Default Changelist" comment="新增 debug.ts 追踪调用栈,&#10;新增 新能测试方式 perf.ts&#10;新增 error.ts 方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/01-principle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/01-principle.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/deep.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-src/core/instance/lifecycle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/deep.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-src/core/util/perf.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vue-src/core/util/perf.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,6 +68,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\学习资料\vue-origin\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\学习资料\vue-origin\vue-src" />
     </key>
@@ -107,7 +111,10 @@
       <workItem from="1603949653543" duration="5130000" />
       <workItem from="1603954909762" duration="4607000" />
       <workItem from="1604026517552" duration="371000" />
-      <workItem from="1604027536401" duration="8634000" />
+      <workItem from="1604027536401" duration="8749000" />
+      <workItem from="1604366669707" duration="2855000" />
+      <workItem from="1604372097132" duration="738000" />
+      <workItem from="1604388995501" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="1、学习 events 绑定规则">
       <created>1603959253312</created>
@@ -116,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603959253312</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增 debug.ts 追踪调用栈,&#10;新增 新能测试方式 perf.ts&#10;新增 error.ts 方法">
+      <created>1604041028973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604041028973</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +151,7 @@
         <option value="$PROJECT_DIR$/vue-src/core/util/env.js" />
         <option value="$PROJECT_DIR$/vue-src/core/util/error.js" />
         <option value="$PROJECT_DIR$/vue-src/core/util/debug.js" />
+        <option value="$PROJECT_DIR$/vue-src/core/instance/lifecycle.js" />
       </list>
     </option>
   </component>
@@ -166,21 +181,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1、学习 events 绑定规则" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、学习 events 绑定规则" />
+    <MESSAGE value="新增 debug.ts 追踪调用栈,&#10;新增 新能测试方式 perf.ts&#10;新增 error.ts 方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增 debug.ts 追踪调用栈,&#10;新增 新能测试方式 perf.ts&#10;新增 error.ts 方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603679566606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603679566606" />
-    <state x="500" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603863980046">
+    <state x="500" y="366" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604367316048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="500" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603863980046" />
-    <state x="1162" y="298" key="FileChooserDialogImpl" timestamp="1604026887546">
+    <state x="500" y="366" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604367316048" />
+    <state x="1162" y="298" key="FileChooserDialogImpl" timestamp="1604388138059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1162" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604026887546" />
+    <state x="1162" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604388138059" />
     <state width="1061" height="2" key="GridCell.Tab.0.bottom" timestamp="1603867119117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,14 +217,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="213" width="998" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603679516773" />
-    <state x="947" y="256" key="Vcs.Push.Dialog.v2" timestamp="1603959349343">
+    <state x="947" y="256" key="Vcs.Push.Dialog.v2" timestamp="1604394124892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="947" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603959349343" />
+    <state x="947" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604394124892" />
     <state x="1170" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603959513743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603959513743" />
+    <state x="832" y="238" key="run.anything.popup" timestamp="1604389038837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="832" y="238" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604389038837" />
     <state x="1008" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603953223342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
